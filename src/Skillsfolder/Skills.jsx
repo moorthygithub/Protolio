@@ -18,8 +18,8 @@ function Skills() {
   const handleExit = (animation) => {
     setExitAnimation(animation);
     setTimeout(() => {
-      setExitAnimation(""); // Reset after animation
-    }, 1500); // Match the animation duration
+      setExitAnimation("");
+    }, 1500);
   };
 
   return (

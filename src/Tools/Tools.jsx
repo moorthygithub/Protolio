@@ -15,7 +15,7 @@ function Tools() {
             </svg>
             <h1>Designer Tools</h1>
             <h3>
-              I like to design things simple and clean and which gives ultimate
+              I like to   design things simple and clean and which gives ultimate
               sophistication
             </h3>
             <h3 className="head-tools">What I do</h3>
