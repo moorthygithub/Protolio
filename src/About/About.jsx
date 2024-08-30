@@ -3,7 +3,6 @@ import "./About.css";
 import Svg from "./svg";
 import Skills from "../Skillsfolder/Skills";
 import Tools from "../Tools/Tools";
-
 function About() {
   return (
     <div className="about-container">
@@ -17,10 +16,9 @@ function About() {
             <Svg />
             <h2>Full Stack Python</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio harum culpa omnis obcaecati iure! Reprehenderit illo
-              libero tenetur enim eveniet, nisi similique illum excepturi, velit
-              a commodi laudantium necessitatibus molestiae!
+              Completed my Full Stack Python in Besant Technologies and i gain
+              more Knowledege and done Web developement Project and Full stack
+              project
             </p>
           </div>
           <div className="icon-1">
@@ -39,10 +37,9 @@ function About() {
             </h2>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              ex similique quos exercitationem enim nam distinctio! Porro, nam
-              debitis maxime quo voluptatibus, perferendis, voluptate itaque
-              sapiente rem neque in ullam?
+              Completed my Higher Secondary school in Sri Vijay Vidhyalaya
+              Matric school in Krishnagiri .I secured a 68.6 percentage in
+              2017-2019 batch
             </p>
           </div>
           <div className="icon-3">
@@ -51,10 +48,9 @@ function About() {
               SSLC 10<p className="icon-3-p">th</p>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              nihil eius accusamus sint quidem, sapiente quia illum qui odit
-              accusantium quibusdam error repudiandae laborum beatae.
-              Exercitationem delectus nostrum doloremque neque.
+              Completed my Secondary school in Kingsley garden matric higher
+              seondary school in kandikuppam ,Krishnagiri.I secured a 79
+              percentage in 2016-2017 batch
             </p>
           </div>
         </div>

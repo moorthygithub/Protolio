@@ -22,7 +22,8 @@ function Tools() {
             <h3>Figma</h3>
             <h3>Microsoft Office</h3>
             <h3>Canva</h3>
-            <h3>Logo</h3>
+            <h3>Logo Desginer</h3>
+            <h3>Templete Desginer</h3>
             <h3>Adobe Xd</h3>
           </div>
         </div>
@@ -45,11 +46,13 @@ function Tools() {
             <h3 className="head-tools">Dev Tools</h3>
             <h3>VS-Code</h3>
             <h3>Font-Awesome</h3>
-            <h3>Redux</h3>
+            <h3>Redux & React dev Tools</h3>
             <h3>Github</h3>
+            <h3>Gitlab</h3>
             <h3>Postman</h3>
             <h3>Anaconda Notebook</h3>
             <h3>Jupyter Notebook</h3>
+            <h3>Formik & Yup</h3>
           </div>
         </div>
       </div>

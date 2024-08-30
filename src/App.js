@@ -5,7 +5,7 @@ import Home from "./Home/Home";
 import About from "./About/About";
 import Project from "./Project/project";
 import Contact from "./Contact/Contact";
-import Fotter from "./Fotter/Fotter"
+import Fotter from "./Fotter/Fotter";
 function App() {
   return (
     <Router>
@@ -18,7 +18,6 @@ function App() {
       </Routes>
       <Fotter></Fotter>
     </Router>
-
   );
 }
 

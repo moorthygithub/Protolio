@@ -10,7 +10,7 @@ import weather from '../Components/Assets/weather-logo.png';
 
 function Project() {
   const projects = [
-    { image: shopify, title: 'Shopify', description: 'Shopify is an e-commerce platform.',button:'Details',link:''},
+    { image: shopify, title: 'Shopify', description: 'Shopify is an e-commerce platform.',button:'Details',link:'https://main--magshopping.netlify.app/'},
     { image: taxi, title: 'Taxi Booking', description: 'A taxi booking application.',button:'Details',link:'https://main--jazzy-daffodil-b48ffd.netlify.app/booking'},
     { image: form, title: 'Employee Management', description: 'An employee management system.',button:'Details',link:'https://main--employeemanagementformreact.netlify.app/login'},
     { image: firebase, title: 'Firebase', description: 'Using FireBase for login Authentication',button:'Details',link:"https://github.com/moorthygithub/FirebaseAuthentication"},
