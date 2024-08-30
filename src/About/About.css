@@ -1,0 +1,159 @@
+.about-container {
+  padding: 20px;
+  color: white;
+  
+}
+.education-degree,
+.svg-icon {
+  display: inline;
+  color: yellow;
+}
+.education {
+  font-size: 35px; 
+
+}
+.education-section {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* .education-section {
+  font-size: 24px;
+  margin-bottom: 10px;
+} */
+
+.education-section .icon1,
+.icon2,
+.icon3 {
+  margin-top: 10px;
+}
+
+.education-section .icon1,
+.icon2,
+.icon3,
+.svg-icon {
+  width: 50px;
+  height: 50px;
+  fill: yellow;
+}
+.education-section-in {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.icon-1,
+.icon-2,
+.icon-3 {
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px rgb(193, 179, 58);
+  padding: 40px;
+  text-align: center;
+}
+.icon-2-p,
+.icon-3-p {
+  display: inline;
+  margin-bottom: 5px;
+  position: absolute;
+  top: -37px;
+}
+.icon-2-h,
+.icon-3-h {
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .education {
+    font-size: 30px;
+  }
+
+  .education-section .icon1,
+  .education-section .icon2,
+  .education-section .icon3,
+  .svg-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .education-section-in {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon-1,
+  .icon-2,
+  .icon-3 {
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgb(193, 179, 58);
+    text-align: center;
+  }
+}
+
+.icon-1:hover,
+.icon-2:hover,
+.icon-3:hover{
+  transform: translateY(-5px);
+}
+
+@media (max-width: 900px) {
+  .education {
+    font-size: 25px;
+  }
+
+  .education-section .icon1,
+  .education-section .icon2,
+  .education-section .icon3,
+  .svg-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .education-section-in {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .education {
+    font-size: 20px;
+  }
+
+  .education-section .icon1,
+  .education-section .icon2,
+  .education-section .icon3,
+  .svg-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .education-section-in {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .education {
+    font-size: 18px;
+  }
+
+  .education-section .icon1,
+  .education-section .icon2,
+  .education-section .icon3,
+  .svg-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 200px) {
+  .education {
+    font-size: 18px;
+  }
+
+  .education-section .icon1,
+  .education-section .icon2,
+  .education-section .icon3,
+  .svg-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

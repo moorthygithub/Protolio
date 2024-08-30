@@ -1,0 +1,100 @@
+.Tools-container-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 45px;
+}
+.head-tools{
+color: yellow;
+}
+.Tools-svg-icon {
+  width: 50px;
+  height: 50px;
+  fill: yellow;
+  align-items: center;
+}
+
+.Tools-in {
+  text-align: center;
+  border: 2px solid white;
+  height: 550px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 20px;
+  box-shadow: rgba(16, 14, 14, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(11, 11, 11, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.Tools-in::before {
+  content: attr(data-before);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(13, 13, 60);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  z-index: 2;
+  box-shadow: rgba(16, 14, 14, 0.17) 0px -23px 25px 0px inset,
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+  rgba(11, 11, 11, 0.1) 0px -79px 40px 0px inset,
+  rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+  rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.Tools-in .content {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.Tools-in:hover::before {
+  transform: translateY(-100%);
+}
+
+.Tools-in:hover .content {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .Tools-container-main {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .Tools-in {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Tools-container-main {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+
+  .Tools-in {
+    height: auto;
+    padding: 5px;
+  }
+
+  .Tools-svg-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
