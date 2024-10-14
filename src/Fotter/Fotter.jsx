@@ -40,7 +40,7 @@ export default function Footer() {
               About Me
             </Typography>
             <Typography variant="body2" color="inherit">
-              As a fresher i am Eager to learn New Technology and need to Again
+              As a fresher i am Eager to learn New Technology and need to Gain
               More Knowledge from the Company
             </Typography>
           </Grid>
