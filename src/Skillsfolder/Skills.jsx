@@ -10,6 +10,12 @@ import fastapi from "../Components/Assets/fastapi.jpg";
 import typescript from "../Components/Assets/pngwing.com.png";
 import Tap from "../Components/Assets/tap.png";
 import Image from "./Images";
+import ReactQuery from "../Components/Assets/reactquery.webp";
+import Tailwind from "../Components/Assets/Tailwind.png";
+import MTailwind from "../Components/Assets/materialtailwind.png";
+import Radix from "../Components/Assets/Radix.png";
+import Redux from "../Components/Assets/redux.png";
+
 import { useState } from "react";
 
 function Skills() {
@@ -59,6 +65,22 @@ function Skills() {
         </div>
         <div onClick={() => handleExit("bounceOutRight")}>
           <Image path={typescript} desc={"TypeScript"} />
+        </div>
+
+        <div onClick={() => handleExit("bounceOut")}>
+          <Image path={ReactQuery} desc={"ReactQuery"} />
+        </div>
+        <div onClick={() => handleExit("bounceOutDown")}>
+          <Image path={Tailwind} desc={" Tailwind"} />
+        </div>
+        <div onClick={() => handleExit("bounceOutLeft")}>
+          <Image path={MTailwind} desc={"Material Tailwind"} />
+        </div>
+        <div onClick={() => handleExit("bounceOutUp")}>
+          <Image path={Radix} desc={"Radix"} />
+        </div>
+        <div onClick={() => handleExit("bounceOutLeft")}>
+          <Image path={Redux} desc={"Redux"} />
         </div>
       </div>
     </div>

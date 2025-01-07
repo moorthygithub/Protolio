@@ -20,9 +20,12 @@
 
 .tap-icon {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10%;
+right: 200px;
+z-index: 10; 
 }
+
+
 
 .tap-animation {
   width: 50px;
@@ -52,8 +55,10 @@
 }
 
 .image-path {
-  width: 100px;
-  height: auto;
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fits within the box without distortion */
+  border-radius: 8px; /* Optional: Rounded corners */
 }
 
 .skills-image-container:hover {
