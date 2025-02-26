@@ -3,6 +3,7 @@ import "./Contactform.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { TextField, Button, Container, Typography, Grid } from "@mui/material";
+import { toast } from "sonner";
 
 const validationSchema = Yup.object({
   Firstname: Yup.string()
@@ -69,11 +70,11 @@ const MyForm = () => {
 
         const result = await response.json();
         console.log(result.message);
-        alert("Message Sent Successfully!");
+        toast.success("Message Sent Successfully!");
         resetForm(); // Reset form after successful submission
       } catch (error) {
         console.error("Error:", error);
-        alert("DataBase is Stoped.");
+        toast.error("DataBase is Stoped.");
       }
     },
   });

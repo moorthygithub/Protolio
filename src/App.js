@@ -6,9 +6,18 @@ import About from "./About/About";
 import Project from "./Project/project";
 import Contact from "./Contact/Contact";
 import Fotter from "./Fotter/Fotter";
+import { Toaster } from "sonner";
 function App() {
   return (
     <Router>
+      <Toaster
+        position="top-right"
+        richColors
+        toastOptions={{
+          success: { style: { backgroundColor: "green", color: "white" } },
+          error: { style: { backgroundColor: "red", color: "white" } },
+        }}
+      />
       <Navigation></Navigation>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
