@@ -22,6 +22,20 @@ const validationSchema = Yup.object({
     .required("Description is required"),
 });
 
+// const MyForm = () => {
+//   const formik = useFormik({
+//     initialValues: {
+//       Firstname: "",
+//       Lastname: "",
+//       email: "",
+//       phone: "",
+//       description: "",
+//     },
+//     validationSchema: validationSchema,
+//     onSubmit: (values) => {
+//       console.log("Form values:", values);
+//     },
+//   });
 const MyForm = () => {
   const formik = useFormik({
     initialValues: {
@@ -32,11 +46,37 @@ const MyForm = () => {
       description: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      console.log("Form values:", values);
+    onSubmit: async (values, { resetForm }) => {
+      const formData = {
+        Firstname: formik.values.Firstname,
+        Lastname: formik.values.Lastname,
+        Email: formik.values.email,
+        Phone: formik.values.phone,
+        Description: formik.values.description,
+      };
+      try {
+        const response = await fetch("http://localhost:8000/createprotfolio", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+
+        const result = await response.json();
+        console.log(result.message);
+        alert("Message Sent Successfully!");
+        resetForm(); // Reset form after successful submission
+      } catch (error) {
+        console.error("Error:", error);
+        alert("DataBase is Stoped.");
+      }
     },
   });
-
   return (
     <Container
       maxWidth="sm"
