@@ -23,20 +23,6 @@ const validationSchema = Yup.object({
     .required("Description is required"),
 });
 
-// const MyForm = () => {
-//   const formik = useFormik({
-//     initialValues: {
-//       Firstname: "",
-//       Lastname: "",
-//       email: "",
-//       phone: "",
-//       description: "",
-//     },
-//     validationSchema: validationSchema,
-//     onSubmit: (values) => {
-//       console.log("Form values:", values);
-//     },
-//   });
 const MyForm = () => {
   const formik = useFormik({
     initialValues: {
@@ -55,14 +41,18 @@ const MyForm = () => {
         Phone: formik.values.phone,
         Description: formik.values.description,
       };
+      console.log(formData);
       try {
-        const response = await fetch("http://localhost:8000/createprotfolio", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+        const response = await fetch(
+          "https://node-test-cdke.onrender.com/api/profolio",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
 
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -71,10 +61,10 @@ const MyForm = () => {
         const result = await response.json();
         console.log(result.message);
         toast.success("Message Sent Successfully!");
-        resetForm(); // Reset form after successful submission
+        resetForm();
       } catch (error) {
         console.error("Error:", error);
-        toast.error("DataBase is Stoped.");
+        toast.error(`Error: ${error.message}`);
       }
     },
   });
